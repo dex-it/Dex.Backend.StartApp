@@ -7,7 +7,7 @@ using Server.Dal.Contract;
 
 namespace Server.Dal.Provider
 {
-    public class SafeExecuteProvider : ISafeExecuteProvider
+    internal class SafeExecuteProvider : ISafeExecuteProvider
     {
         private readonly IDataExceptionManager _dataExceptionManager;
 

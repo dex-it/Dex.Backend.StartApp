@@ -7,7 +7,7 @@ using Dex.Ef.Contracts;
 
 namespace Server.Dal.Provider
 {
-    public class ModelStore : IModelStore
+    internal class ModelStore : IModelStore
     {
         private readonly Type[] _modelTypes;
 

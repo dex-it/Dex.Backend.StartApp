@@ -5,7 +5,7 @@ using Server.Dal.Model;
 
 namespace Server.Dal.Provider
 {
-    public class DataSeedingProvider
+    internal class DataSeedingProvider
     {
         public static void Config(ModelBuilder builder)
         {

@@ -1,6 +1,6 @@
 namespace Server.Dal.Contract
 {
-    public interface IDataExceptionManager
+    internal interface IDataExceptionManager
     {
         System.Exception Normalize(System.Exception ex);
         

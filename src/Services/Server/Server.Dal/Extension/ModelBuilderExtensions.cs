@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace Server.Dal.Extension
 {
-    public static class ModelBuilderExtensions
+    internal static class ModelBuilderExtensions
     {
         public static ModelBuilder UseValueConverterForType<TModel, TProvider>(
             this ModelBuilder modelBuilder,

@@ -47,7 +47,7 @@ namespace Server.DbMigrator
         }
     }
 
-    public class DbContextFactory : IDesignTimeDbContextFactory<DbContextFactory.MigratorEfDataConnection>
+    internal class DbContextFactory : IDesignTimeDbContextFactory<DbContextFactory.MigratorEfDataConnection>
     {
         public MigratorEfDataConnection CreateDbContext(string[] args)
         {
@@ -68,11 +68,11 @@ namespace Server.DbMigrator
                     o => o.MigrationsAssembly(GetType().Namespace)
                         .MigrationsHistoryTable(HistoryRepository.DefaultTableName, "service"))
                 .Options;
-
+            
             return new MigratorEfDataConnection(modelStore, dbContextOptions, loggerFactory);
         }
 
-        public class MigratorEfDataConnection : ServerEfDataConnection
+        internal class MigratorEfDataConnection : ServerEfDataConnection
         {
             private readonly ILoggerFactory _loggerFactory;
 

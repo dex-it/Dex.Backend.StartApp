@@ -6,7 +6,7 @@ using Server.Dal.Exception;
 
 namespace Server.Dal.Provider
 {
-    public class PostgresDataExceptionManager : IDataExceptionManager
+    internal class PostgresDataExceptionManager : IDataExceptionManager
     {
         public System.Exception Normalize([NotNull] System.Exception exception)
         {

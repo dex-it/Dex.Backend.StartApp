@@ -1,7 +1,6 @@
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
-using System.Linq;
 using Dex.Ef.Contracts;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
@@ -11,7 +10,7 @@ using Server.Dal.Provider;
 
 namespace Server.Dal
 {
-    public class ServerEfDataConnection : ResetDbContext
+    internal class ServerEfDataConnection : ResetDbContext
     {
         private readonly IEnumerable<Type> _modeTypes;
 

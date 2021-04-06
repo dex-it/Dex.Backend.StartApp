@@ -2,7 +2,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Server.Dal.Base
 {
-    public abstract class ResetDbContext : DbContext
+    internal abstract class ResetDbContext : DbContext
     {
         protected ResetDbContext(DbContextOptions options) : base(options)
         {

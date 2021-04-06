@@ -2,14 +2,13 @@ using Dex.Ef.Contracts;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Server.Dal;
 using Server.Dal.Base;
 using Server.Dal.Contract;
 using Server.Dal.Provider;
 
-namespace Server.Web.Extensions
+namespace Server.Dal.Installer
 {
-    public static class ServiceCollectionExtension
+    public static class ServiceExtensions
     {
         public static IServiceCollection AddDal(
             this IServiceCollection services,

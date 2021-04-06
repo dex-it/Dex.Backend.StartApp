@@ -12,7 +12,7 @@ using Server.Dal.Contract;
 
 namespace Server.Dal.Provider
 {
-    public class EfDataProvider : IDataProvider
+    internal class EfDataProvider : IDataProvider
     {
         private readonly ResetDbContext _dbContext;
         private readonly IDataExceptionManager _exceptionManager;
