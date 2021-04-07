@@ -6,7 +6,7 @@ using Server.Dal.Base;
 using Server.Dal.Contract;
 using Server.Dal.Provider;
 
-namespace Server.Dal.Installer
+namespace Server.Dal.MicrosoftDependencyInjectionExtensions
 {
     public static class ServiceExtensions
     {

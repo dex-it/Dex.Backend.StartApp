@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using Server.Dal.Common;
 using Server.Dal.Model;
 
-namespace Server.Dal.Provider
+namespace Server.DbMigrator
 {
     internal class DataSeedingProvider
     {

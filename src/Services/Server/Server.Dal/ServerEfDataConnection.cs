@@ -45,8 +45,7 @@ namespace Server.Dal
             EnumFluentDbProvider.Config(builder);
             FluentIndex.Config(builder);
             ForeignKeysFluentDbProvider.Config(builder);
-            DataSeedingProvider.Config(builder);
-            
+
             DateConverter(builder);
         }
 

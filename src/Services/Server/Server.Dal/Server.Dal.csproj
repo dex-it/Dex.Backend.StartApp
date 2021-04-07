@@ -15,7 +15,7 @@
         </AssemblyAttribute>
         
         <AssemblyAttribute Include="System.Runtime.CompilerServices.InternalsVisibleToAttribute">
-            <_Parameter1>Server.Dal.Installer</_Parameter1>
+            <_Parameter1>Server.Dal.MicrosoftDependencyInjectionExtensions</_Parameter1>
         </AssemblyAttribute>
     </ItemGroup>    
     

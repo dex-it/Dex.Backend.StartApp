@@ -47,7 +47,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Server.DbMigrator", "Servic
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DependencyInjection", "DependencyInjection", "{30C6474A-770F-497E-9F20-333C7197A5D5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Server.Dal.Installer", "Services\Server\DependencyInjection\Server.Dal.Installer\Server.Dal.Installer.csproj", "{E981099C-17AC-4904-8640-4F439ECB8788}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Server.Dal.MicrosoftDependencyInjectionExtensions", "Services\Server\DependencyInjection\Server.Dal.MicrosoftDependencyInjectionExtensions\Server.Dal.MicrosoftDependencyInjectionExtensions.csproj", "{E981099C-17AC-4904-8640-4F439ECB8788}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
