@@ -5,7 +5,8 @@ using Microsoft.AspNetCore.Mvc.ApiExplorer;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Server.Web.Extensions;
+using Server.Dal.MicrosoftDependencyInjectionExtensions;
+using Server.Bll.MicrosoftDependencyInjectionExtensions;
 using Swagger;
 
 namespace Server.Web
@@ -14,12 +15,12 @@ namespace Server.Web
     {
         private const string AllowOrigin = "AllowSpecificOrigin";
 
-        private IConfiguration Configuration { get; }
+        private readonly IConfiguration _configuration;
 
         public ServerStartup(
             IConfiguration configuration)
         {
-            Configuration = configuration;
+            _configuration = configuration;
         }
 
         // This method gets called by the runtime. Use this method to add services to the container.
@@ -29,7 +30,8 @@ namespace Server.Web
             services.AddCors(o => o.AddPolicy(AllowOrigin,
                 b => b.WithOrigins("http://localhost:4200").AllowAnyHeader().AllowAnyMethod())
             );
-            services.AddDal(Configuration);
+            services.AddBll(_configuration);
+            services.AddDal(_configuration);
             services.AddSwagger(new ApiVersion(1, 0), "Server API");
         }
 

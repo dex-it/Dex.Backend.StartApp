@@ -2,18 +2,18 @@
 
     <PropertyGroup>
         <TargetFramework>net5.0</TargetFramework>
+        <LangVersion>default</LangVersion>
     </PropertyGroup>
 
     <ItemGroup>
-        <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="5.0.2" />
-        <PackageReference Include="Microsoft.AspNetCore.Authentication.OpenIdConnect" Version="5.0.2" />
-        <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
-        <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
+        <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="5.0.6" />
+        <PackageReference Include="Microsoft.AspNetCore.Authentication.OpenIdConnect" Version="5.0.6" />
     </ItemGroup>
 
     <ItemGroup>
       <ProjectReference Include="..\..\..\Core\Swagger\Swagger.csproj" />
-      <ProjectReference Include="..\Server.Bll\Server.Bll.csproj" />
+      <ProjectReference Include="..\Domen\Server.Bll.MicrosoftDependencyInjectionExtensions\Server.Bll.MicrosoftDependencyInjectionExtensions.csproj" />
+      <ProjectReference Include="..\Infrastructure\Server.Dal.MicrosoftDependencyInjectionExtensions\Server.Dal.MicrosoftDependencyInjectionExtensions.csproj" />
     </ItemGroup>
 
     <ItemGroup>

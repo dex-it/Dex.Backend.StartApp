@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netstandard2.1</TargetFramework>
+        <LangVersion>9</LangVersion>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\..\Domen\Server.Bll.Abstraction\Server.Bll.Abstraction.csproj" />
+      <ProjectReference Include="..\Server.Dal.EF\Server.Dal.EF.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <AssemblyAttribute Include="System.Runtime.CompilerServices.InternalsVisibleToAttribute">
+            <_Parameter1>Server.Dal.MicrosoftDependencyInjectionExtensions</_Parameter1>
+        </AssemblyAttribute>
+    </ItemGroup>
+
+
+</Project>
