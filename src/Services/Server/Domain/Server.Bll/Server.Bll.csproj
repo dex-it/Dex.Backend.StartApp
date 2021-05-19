@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netstandard2.1</TargetFramework>
+        <RootNamespace>Server.Infrastructure</RootNamespace>
+        <LangVersion>9</LangVersion>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\..\Infrastructure\Server.Dal\Server.Dal.csproj"/>
+        <ProjectReference Include="..\Server.Bll.Abstraction\Server.Bll.Abstraction.csproj"/>
+    </ItemGroup>
+
+    <ItemGroup>
+        <AssemblyAttribute Include="System.Runtime.CompilerServices.InternalsVisibleToAttribute">
+            <_Parameter1>Server.Bll.Tests.L0</_Parameter1>
+        </AssemblyAttribute>
+        
+        <AssemblyAttribute Include="System.Runtime.CompilerServices.InternalsVisibleToAttribute">
+            <_Parameter1>Server.Bll.MicrosoftDependencyInjectionExtensions</_Parameter1>
+        </AssemblyAttribute>
+    </ItemGroup>
+
+</Project>
