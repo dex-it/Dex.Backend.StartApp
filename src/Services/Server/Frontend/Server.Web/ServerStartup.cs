@@ -5,8 +5,8 @@ using Microsoft.AspNetCore.Mvc.ApiExplorer;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Server.Dal.MicrosoftDependencyInjectionExtensions;
 using Server.Bll.MicrosoftDependencyInjectionExtensions;
+using Server.Dal.MicrosoftDependencyInjectionExtensions;
 using Swagger;
 
 namespace Server.Web

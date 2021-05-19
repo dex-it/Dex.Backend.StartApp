@@ -11,15 +11,15 @@
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\..\..\Core\Swagger\Swagger.csproj" />
-      <ProjectReference Include="..\Domain\Server.Bll.MicrosoftDependencyInjectionExtensions\Server.Bll.MicrosoftDependencyInjectionExtensions.csproj" />
-      <ProjectReference Include="..\Infrastructure\Server.Dal.MicrosoftDependencyInjectionExtensions\Server.Dal.MicrosoftDependencyInjectionExtensions.csproj" />
-    </ItemGroup>
-
-    <ItemGroup>
       <Folder Include="Controllers\V1" />
       <Folder Include="Middlewares" />
       <Folder Include="Options" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\..\..\..\Core\Swagger\Swagger.csproj" />
+      <ProjectReference Include="..\..\Domain\Server.Bll.MicrosoftDependencyInjectionExtensions\Server.Bll.MicrosoftDependencyInjectionExtensions.csproj" />
+      <ProjectReference Include="..\..\Infrastructure\Server.Dal.MicrosoftDependencyInjectionExtensions\Server.Dal.MicrosoftDependencyInjectionExtensions.csproj" />
     </ItemGroup>
 
 </Project>

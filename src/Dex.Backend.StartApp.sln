@@ -17,7 +17,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Server", "Server", "{70DD0F
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Authentication", "Core\Authentication\Authentication.csproj", "{FBE92AA7-4795-4728-ACEC-BBDE8C0109A2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Server.Web", "Services\Server\Server.Web\Server.Web.csproj", "{431E9CFF-CA7A-49FB-86EE-212ABD21CAD7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Server.Web", "Services\Server\Frontend\Server.Web\Server.Web.csproj", "{431E9CFF-CA7A-49FB-86EE-212ABD21CAD7}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Server.Bll", "Services\Server\Domain\Server.Bll\Server.Bll.csproj", "{EA9A0478-9F1D-42B6-9495-7A2FD596DDAA}"
 EndProject
@@ -71,7 +71,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Server.Bll.MicrosoftDepende
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{BA0620B2-318B-478F-ACFF-645C98416CA8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Server.Web.Tests.L2", "Services\Server\Server.Web.Tests.L2\Server.Web.Tests.L2.csproj", "{1634D842-8C50-492E-9A69-C9B03932379D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Server.Web.Tests.L2", "Services\Server\Frontend\Server.Web.Tests.L2\Server.Web.Tests.L2.csproj", "{1634D842-8C50-492E-9A69-C9B03932379D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
