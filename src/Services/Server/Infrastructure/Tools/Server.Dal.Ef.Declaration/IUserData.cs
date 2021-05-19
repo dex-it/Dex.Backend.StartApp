@@ -14,6 +14,6 @@ namespace Server.Dal.Ef.Declaration
 
         DateTime? BirthDay { get; }
 
-        Gendor Gendor { get; }
+        Gender Gender { get; }
     }
 }

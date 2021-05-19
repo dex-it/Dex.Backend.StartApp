@@ -11,7 +11,7 @@ namespace Server.Dal.EF.Provider
     {
 	    public static void MapEnum()
 		{
-            NpgsqlConnection.GlobalTypeMapper.MapEnum<Gendor>(nameof(Gendor).ToLower());
+            NpgsqlConnection.GlobalTypeMapper.MapEnum<Gender>(nameof(Gender).ToLower());
 		}
 
 	    private static string[] GetNames(Type enym)
@@ -24,7 +24,7 @@ namespace Server.Dal.EF.Provider
 
         public static void Config(ModelBuilder builder)
         {
-            builder.HasPostgresEnum(nameof(Gendor).ToLower(), GetNames(typeof(Gendor)));
+            builder.HasPostgresEnum(nameof(Gender).ToLower(), GetNames(typeof(Gender)));
 
 		}
     }

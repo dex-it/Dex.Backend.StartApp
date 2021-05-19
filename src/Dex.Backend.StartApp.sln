@@ -11,7 +11,7 @@ ProjectSection(SolutionItems) = preProject
 	Tools\.gitkeep = Tools\.gitkeep
 EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests.Integration", "Tests\Tests.Integration\Tests.Integration.csproj", "{89C7E20A-35AE-4FA5-8A17-CBE5DC5388F3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests.L2", "Tests\Tests.L2\Tests.L2.csproj", "{89C7E20A-35AE-4FA5-8A17-CBE5DC5388F3}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Server", "Server", "{70DD0FA2-61FA-4EA0-8AFD-D570C90DE574}"
 EndProject
@@ -19,7 +19,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Authentication", "Core\Auth
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Server.Web", "Services\Server\Server.Web\Server.Web.csproj", "{431E9CFF-CA7A-49FB-86EE-212ABD21CAD7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Server.Bll", "Services\Server\Domen\Server.Bll\Server.Bll.csproj", "{EA9A0478-9F1D-42B6-9495-7A2FD596DDAA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Server.Bll", "Services\Server\Domain\Server.Bll\Server.Bll.csproj", "{EA9A0478-9F1D-42B6-9495-7A2FD596DDAA}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Server.Dal.EF", "Services\Server\Infrastructure\Server.Dal.EF\Server.Dal.EF.csproj", "{515DC79B-A50F-434C-BFAE-0258613085D6}"
 EndProject
@@ -37,9 +37,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Server.Dal.Ef.Migrator", "S
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{B0E26FD5-ECF6-455A-971A-1B652C77C55B}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domen", "Domen", "{86E2125D-2DCB-45E1-9550-AAE0FF7811F3}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{86E2125D-2DCB-45E1-9550-AAE0FF7811F3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Server.Bll.Abstraction", "Services\Server\Domen\Server.Bll.Abstraction\Server.Bll.Abstraction.csproj", "{E49AE68D-C61E-4B6A-A913-90651E25E9AB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Server.Bll.Abstraction", "Services\Server\Domain\Server.Bll.Abstraction\Server.Bll.Abstraction.csproj", "{E49AE68D-C61E-4B6A-A913-90651E25E9AB}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{CB4226B9-0D70-4F2E-8BD1-57A6D860B871}"
 EndProject
@@ -49,7 +49,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Server.Dal.Tests.L1", "Serv
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{F42A7C27-EF0C-4AFA-A611-FD71A5AE389D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Server.Domen.Tests.L0", "Services\Server\Domen\Tests\Server.Domen.Tests.L0\Server.Domen.Tests.L0.csproj", "{19E8FA66-FA64-41F7-B36B-BE5657E3A74D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Server.Bll.Tests.L0", "Services\Server\Domain\Tests\Server.Bll.Tests.L0\Server.Bll.Tests.L0.csproj", "{19E8FA66-FA64-41F7-B36B-BE5657E3A74D}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Frontend", "Frontend", "{6B1FE358-1124-4085-B9E6-0005B107B591}"
 EndProject
@@ -67,7 +67,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Server.Dal.MicrosoftDepende
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Server.Dal", "Services\Server\Infrastructure\Server.Dal\Server.Dal.csproj", "{0997C0D1-24C1-4CC5-9E9A-F0FEE7D32C9F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Server.Bll.MicrosoftDependencyInjectionExtensions", "Services\Server\Domen\Server.Bll.MicrosoftDependencyInjectionExtensions\Server.Bll.MicrosoftDependencyInjectionExtensions.csproj", "{137847CE-CC69-4700-AAF5-254CB58B9F49}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Server.Bll.MicrosoftDependencyInjectionExtensions", "Services\Server\Domain\Server.Bll.MicrosoftDependencyInjectionExtensions\Server.Bll.MicrosoftDependencyInjectionExtensions.csproj", "{137847CE-CC69-4700-AAF5-254CB58B9F49}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{BA0620B2-318B-478F-ACFF-645C98416CA8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Server.Web.Tests.L2", "Services\Server\Server.Web.Tests.L2\Server.Web.Tests.L2.csproj", "{1634D842-8C50-492E-9A69-C9B03932379D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -104,6 +108,8 @@ Global
 		{A18E219E-5BC5-4850-BDFB-A83144972ECD} = {B0E26FD5-ECF6-455A-971A-1B652C77C55B}
 		{0997C0D1-24C1-4CC5-9E9A-F0FEE7D32C9F} = {B0E26FD5-ECF6-455A-971A-1B652C77C55B}
 		{137847CE-CC69-4700-AAF5-254CB58B9F49} = {86E2125D-2DCB-45E1-9550-AAE0FF7811F3}
+		{BA0620B2-318B-478F-ACFF-645C98416CA8} = {6B1FE358-1124-4085-B9E6-0005B107B591}
+		{1634D842-8C50-492E-9A69-C9B03932379D} = {BA0620B2-318B-478F-ACFF-645C98416CA8}
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{89C7E20A-35AE-4FA5-8A17-CBE5DC5388F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -190,5 +196,9 @@ Global
 		{137847CE-CC69-4700-AAF5-254CB58B9F49}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{137847CE-CC69-4700-AAF5-254CB58B9F49}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{137847CE-CC69-4700-AAF5-254CB58B9F49}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1634D842-8C50-492E-9A69-C9B03932379D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1634D842-8C50-492E-9A69-C9B03932379D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1634D842-8C50-492E-9A69-C9B03932379D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1634D842-8C50-492E-9A69-C9B03932379D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

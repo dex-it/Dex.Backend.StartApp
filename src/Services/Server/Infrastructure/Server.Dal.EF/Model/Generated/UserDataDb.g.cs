@@ -23,8 +23,8 @@ namespace Server.Dal.EF.Model
 		[Column("birth_day")]
 		public Nullable<DateTime> BirthDay { get; set; }
 
-		[Column("gendor")]
-		public Gendor Gendor { get; set; }
+		[Column("gender")]
+		public Gender Gender { get; set; }
 
 		[ForeignKey(nameof(UserId))]
 		public UserDb User { get; set; }

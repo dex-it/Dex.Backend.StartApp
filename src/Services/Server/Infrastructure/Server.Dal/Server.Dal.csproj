@@ -7,13 +7,20 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\..\Domen\Server.Bll.Abstraction\Server.Bll.Abstraction.csproj" />
       <ProjectReference Include="..\Server.Dal.EF\Server.Dal.EF.csproj" />
     </ItemGroup>
 
     <ItemGroup>
         <AssemblyAttribute Include="System.Runtime.CompilerServices.InternalsVisibleToAttribute">
             <_Parameter1>Server.Dal.MicrosoftDependencyInjectionExtensions</_Parameter1>
+        </AssemblyAttribute>
+
+        <AssemblyAttribute Include="System.Runtime.CompilerServices.InternalsVisibleToAttribute">
+            <_Parameter1>Server.Dal.Tests.L0</_Parameter1>
+        </AssemblyAttribute>
+
+        <AssemblyAttribute Include="System.Runtime.CompilerServices.InternalsVisibleToAttribute">
+            <_Parameter1>Server.Dal.Tests.L1</_Parameter1>
         </AssemblyAttribute>
     </ItemGroup>
 

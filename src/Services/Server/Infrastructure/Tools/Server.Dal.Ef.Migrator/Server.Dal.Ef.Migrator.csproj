@@ -46,7 +46,6 @@
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\..\..\Domen\Server.Bll.MicrosoftDependencyInjectionExtensions\Server.Bll.MicrosoftDependencyInjectionExtensions.csproj" />
       <ProjectReference Include="..\..\Server.Dal.EF\Server.Dal.EF.csproj" />
     </ItemGroup>
 

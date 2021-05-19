@@ -12,7 +12,7 @@
 
     <ItemGroup>
       <ProjectReference Include="..\..\..\Core\Swagger\Swagger.csproj" />
-      <ProjectReference Include="..\Domen\Server.Bll.MicrosoftDependencyInjectionExtensions\Server.Bll.MicrosoftDependencyInjectionExtensions.csproj" />
+      <ProjectReference Include="..\Domain\Server.Bll.MicrosoftDependencyInjectionExtensions\Server.Bll.MicrosoftDependencyInjectionExtensions.csproj" />
       <ProjectReference Include="..\Infrastructure\Server.Dal.MicrosoftDependencyInjectionExtensions\Server.Dal.MicrosoftDependencyInjectionExtensions.csproj" />
     </ItemGroup>
 

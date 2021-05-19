@@ -6,10 +6,11 @@
 
     <ItemGroup>
       <PackageReference Include="Dex.DalGenerator.Annotation" Version="1.0.1" />
+      <PackageReference Include="Dex.Ef" Version="1.0.10" />
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\..\Server.Dal.EF\Server.Dal.EF.csproj" />
+      <ProjectReference Include="..\..\..\Domain\Server.Bll.Abstraction\Server.Bll.Abstraction.csproj" />
     </ItemGroup>
 
 </Project>

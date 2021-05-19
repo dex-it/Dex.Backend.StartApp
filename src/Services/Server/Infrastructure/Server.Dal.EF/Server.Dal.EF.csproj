@@ -40,7 +40,7 @@
 
     <ItemGroup>
         <ProjectReference Include="..\..\..\..\Core\Dal\Dal.Ef.Postgres\Dal.Ef.Postgres.csproj" />
-        <ProjectReference Include="..\..\Domen\Server.Bll.Abstraction\Server.Bll.Abstraction.csproj" />
+        <ProjectReference Include="..\..\Domain\Server.Bll.Abstraction\Server.Bll.Abstraction.csproj" />
     </ItemGroup>
 
 </Project>

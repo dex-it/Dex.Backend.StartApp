@@ -12,4 +12,9 @@
         <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.9.4" />
     </ItemGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\..\Server.Dal.EF\Server.Dal.EF.csproj" />
+      <ProjectReference Include="..\..\Server.Dal\Server.Dal.csproj" />
+    </ItemGroup>
+
 </Project>
