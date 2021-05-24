@@ -21,8 +21,6 @@ namespace Server.Dal.EF
         {
             base.OnModelCreating(builder);
 
-            builder.HasPostgresExtension("uuid-ossp");
-
             EnumFluentDbProvider.Config(builder);
             FluentIndex.Config(builder);
             ForeignKeysFluentDbProvider.Config(builder);
