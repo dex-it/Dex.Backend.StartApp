@@ -1,1 +1,1 @@
-[Схема проекта](https://jamboard.google.com/u/0/d/1uXALTXt_Q0zlYdM6HCxgzGc-k8NpwtbwBSBPucVbiBk/viewer?usp=sharing)
+![Схема проекта](./documentation/rdm.png)
