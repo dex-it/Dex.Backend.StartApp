@@ -1,0 +1,29 @@
+{
+  "CsProject": "./StartApp.Ef.Declaration.csproj",
+  "Dll": "./bin/Debug/net5.0/publish/StartApp.Ef.Declaration.dll",
+  "DbModels": {
+    "Namespace": "StartApp.Infrastructure.Models",
+    "EnumNamespaces": [
+      "StartApp.Infrastructure.Models"
+    ],
+    "Path": "../../Infrastructure/StartApp.Infrastructure/Models/Generated",
+    "IsSnakeCase": true,
+    "IsInternal": true
+  },
+  "DbFluentFk": {
+    "Namespace": "StartApp.Infrastructure.Provider",
+    "Path": "../../Infrastructure/StartApp.Infrastructure/Provider/Generated/DbFluentFkProvider.g.cs"
+  },
+  "DbFluentEnum": {
+    "Namespace": "StartApp.Infrastructure.Provider",
+    "Path": "../../Infrastructure/StartApp.Infrastructure/Provider/Generated/DbFluentEnumProvider.g.cs"
+  },
+  "DbFluentIndex": {
+    "Namespace": "StartApp.Infrastructure.Provider",
+    "Path": "../../Infrastructure/StartApp.Infrastructure/Provider/Generated/DbFluentIndexProvider.g.cs"
+  },
+  "Dto": {
+    "Namespace": "Server.Dto",
+    "Path": "../../Infrastructure/EntryPoint/StartApp.Contracts/Generated"
+  }
+}

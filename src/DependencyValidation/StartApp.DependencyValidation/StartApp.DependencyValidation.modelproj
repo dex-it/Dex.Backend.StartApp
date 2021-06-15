@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{28f42cad-5a8b-4fab-8499-469013dfe1a1}</ProjectGuid>
+    <ArchitectureToolsVersion>2.0.0.0</ArchitectureToolsVersion>
+    <Name>StartApp.DependencyValidation</Name>
+    <RootNamespace>StartApp.DependencyValidation</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Validate Include="DependencyValidation.layerdiagram">
+      <SubType>Content</SubType>
+    </Validate>
+    <Validate Include="DependencyValidation.layerdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>DependencyValidation.layerdiagram</DependentUpon>
+    </Validate>
+    <Validate Include="DependencyValidation.layerdiagram.suppressions">
+      <SubType>Content</SubType>
+      <DependentUpon>DependencyValidation.layerdiagram</DependentUpon>
+    </Validate>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Application\StartApp.Application\StartApp.Application.csproj">
+      <Name>StartApp.Application</Name>
+      <Project>{52db7ebe-eadf-437f-abd1-a68ae216b633}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Domain\StartApp.Domain\StartApp.Domain.csproj">
+      <Name>StartApp.Domain</Name>
+      <Project>{2aa1f0a2-71f0-41e8-90cf-7ce11804032c}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Infrastructure\DependencyInjection\DependencyInjection.csproj">
+      <Name>DependencyInjection</Name>
+      <Project>{fd2cd7e9-74f7-42da-bbe7-e4c7342105f5}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Infrastructure\EntryPoint\StartApp.BackOffice\StartApp.BackOffice.csproj">
+      <Name>StartApp.BackOffice</Name>
+      <Project>{754e7cab-172f-457e-a684-de9e9c4bb27b}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Infrastructure\EntryPoint\StartApp.Contracts\StartApp.Contracts.csproj">
+      <Name>StartApp.Contracts</Name>
+      <Project>{ba7007db-b110-44f6-83df-4a858addf441}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Infrastructure\EntryPoint\StartApp.Web\StartApp.Web.csproj">
+      <Name>StartApp.Web</Name>
+      <Project>{a7ea6047-7efd-4998-b152-63e1bf8b1f55}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Infrastructure\StartApp.Infrastructure\StartApp.Infrastructure.csproj">
+      <Name>StartApp.Infrastructure</Name>
+      <Project>{323b17d3-9f97-4107-b9bb-4242d4b4707c}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Tests\Application.Tests.L0\Application.Tests.L0.csproj">
+      <Name>Application.Tests.L0</Name>
+      <Project>{d16fb1f1-f231-4a29-9100-656c7bd4c8de}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Tests\Domain.Tests.L0\Domain.Tests.L0.csproj">
+      <Name>Domain.Tests.L0</Name>
+      <Project>{86b3eabe-bc14-48b8-bb94-521d0d833a6b}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Tests\Infrastructure.Tests.L0\Infrastructure.Tests.L0.csproj">
+      <Name>Infrastructure.Tests.L0</Name>
+      <Project>{83fd96fb-c8ba-43f4-9bcd-0003fd43f66f}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Tests\Infrastructure.Tests.L1\Infrastructure.Tests.L1.csproj">
+      <Name>Infrastructure.Tests.L1</Name>
+      <Project>{e340c062-b3be-4557-8858-a5dea14f6664}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Tools\StartApp.Ef.Declaration\StartApp.Ef.Declaration.csproj">
+      <Name>StartApp.Ef.Declaration</Name>
+      <Project>{20dbdf72-cca3-4b05-a225-47d71c099304}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Tools\StartApp.Ef.Migrator\StartApp.Ef.Migrator.csproj">
+      <Name>StartApp.Ef.Migrator</Name>
+      <Project>{6db7d776-1966-4131-a28f-9e477cc6ccf5}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VSToolsPath)\ArchitectureTools\Microsoft.VisualStudio.TeamArchitect.ModelingProject.targets" Condition="'$(VSToolsPath)' != ''" />
+</Project>

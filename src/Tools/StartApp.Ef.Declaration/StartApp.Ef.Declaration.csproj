@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net5.0</TargetFramework>
+        <LangVersion>default</LangVersion>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Dex.DalGenerator.Annotation" Version="1.0.1" />
+      <PackageReference Include="Dex.Ef" Version="1.0.10" />
+    </ItemGroup>
+
+</Project>
