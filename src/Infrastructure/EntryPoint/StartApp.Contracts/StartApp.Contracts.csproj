@@ -7,12 +7,6 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <AdditionalFiles Include="..\src\DependencyValidation\StartApp.DependencyValidation\DependencyValidation.layerdiagram" Link="DependencyValidation.layerdiagram">
-        <Visible>False</Visible>
-      </AdditionalFiles>
-    </ItemGroup>
-
-    <ItemGroup>
       <PackageReference Include="Microsoft.DependencyValidation.Analyzers" Version="0.11.0" />
     </ItemGroup>
 
