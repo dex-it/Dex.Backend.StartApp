@@ -15,33 +15,33 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tools", "Tools", "{E8A1DEDD
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "EntryPoint", "EntryPoint", "{2C887576-DDC0-406B-8585-C09B65DE7D1C}"
 EndProject
-Project("{F088123C-0E9E-452A-89E6-6BA2F21D5CAC}") = "StartApp.DependencyValidation", "src\DependencyValidation\StartApp.DependencyValidation\StartApp.DependencyValidation.modelproj", "{28F42CAD-5A8B-4FAB-8499-469013DFE1A1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StartApp.Web", "src\Infrastructure\EntryPoint\StartApp.Web\StartApp.Web.csproj", "{A7EA6047-7EFD-4998-B152-63E1BF8B1F55}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StartApp.Web", "src\Infrastructure\EntryPoint\StartApp.Web\StartApp.Web.csproj", "{A7EA6047-7EFD-4998-B152-63E1BF8B1F55}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StartApp.BackOffice", "src\Infrastructure\EntryPoint\StartApp.BackOffice\StartApp.BackOffice.csproj", "{754E7CAB-172F-457E-A684-DE9E9C4BB27B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StartApp.BackOffice", "src\Infrastructure\EntryPoint\StartApp.BackOffice\StartApp.BackOffice.csproj", "{754E7CAB-172F-457E-A684-DE9E9C4BB27B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StartApp.Domain", "src\Domain\StartApp.Domain\StartApp.Domain.csproj", "{2AA1F0A2-71F0-41E8-90CF-7CE11804032C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StartApp.Domain", "src\Domain\StartApp.Domain\StartApp.Domain.csproj", "{2AA1F0A2-71F0-41E8-90CF-7CE11804032C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StartApp.Application", "src\Application\StartApp.Application\StartApp.Application.csproj", "{52DB7EBE-EADF-437F-ABD1-A68AE216B633}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StartApp.Application", "src\Application\StartApp.Application\StartApp.Application.csproj", "{52DB7EBE-EADF-437F-ABD1-A68AE216B633}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StartApp.Infrastructure", "src\Infrastructure\StartApp.Infrastructure\StartApp.Infrastructure.csproj", "{323B17D3-9F97-4107-B9BB-4242D4B4707C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StartApp.Infrastructure", "src\Infrastructure\StartApp.Infrastructure\StartApp.Infrastructure.csproj", "{323B17D3-9F97-4107-B9BB-4242D4B4707C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DependencyInjection", "src\Infrastructure\DependencyInjection\DependencyInjection.csproj", "{FD2CD7E9-74F7-42DA-BBE7-E4C7342105F5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DependencyInjection", "src\Infrastructure\DependencyInjection\DependencyInjection.csproj", "{FD2CD7E9-74F7-42DA-BBE7-E4C7342105F5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StartApp.Contracts", "src\Infrastructure\EntryPoint\StartApp.Contracts\StartApp.Contracts.csproj", "{BA7007DB-B110-44F6-83DF-4A858ADDF441}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StartApp.Contracts", "src\Infrastructure\EntryPoint\StartApp.Contracts\StartApp.Contracts.csproj", "{BA7007DB-B110-44F6-83DF-4A858ADDF441}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Domain.Tests.L0", "src\Tests\Domain.Tests.L0\Domain.Tests.L0.csproj", "{86B3EABE-BC14-48B8-BB94-521D0D833A6B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain.Tests.L0", "src\Tests\Domain.Tests.L0\Domain.Tests.L0.csproj", "{86B3EABE-BC14-48B8-BB94-521D0D833A6B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Application.Tests.L0", "src\Tests\Application.Tests.L0\Application.Tests.L0.csproj", "{D16FB1F1-F231-4A29-9100-656C7BD4C8DE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Application.Tests.L0", "src\Tests\Application.Tests.L0\Application.Tests.L0.csproj", "{D16FB1F1-F231-4A29-9100-656C7BD4C8DE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Infrastructure.Tests.L0", "src\Tests\Infrastructure.Tests.L0\Infrastructure.Tests.L0.csproj", "{83FD96FB-C8BA-43F4-9BCD-0003FD43F66F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infrastructure.Tests.L0", "src\Tests\Infrastructure.Tests.L0\Infrastructure.Tests.L0.csproj", "{83FD96FB-C8BA-43F4-9BCD-0003FD43F66F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Infrastructure.Tests.L1", "src\Tests\Infrastructure.Tests.L1\Infrastructure.Tests.L1.csproj", "{E340C062-B3BE-4557-8858-A5DEA14F6664}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infrastructure.Tests.L1", "src\Tests\Infrastructure.Tests.L1\Infrastructure.Tests.L1.csproj", "{E340C062-B3BE-4557-8858-A5DEA14F6664}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StartApp.Ef.Migrator", "src\Tools\StartApp.Ef.Migrator\StartApp.Ef.Migrator.csproj", "{6DB7D776-1966-4131-A28F-9E477CC6CCF5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StartApp.Ef.Migrator", "src\Tools\StartApp.Ef.Migrator\StartApp.Ef.Migrator.csproj", "{6DB7D776-1966-4131-A28F-9E477CC6CCF5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StartApp.Ef.Declaration", "src\Tools\StartApp.Ef.Declaration\StartApp.Ef.Declaration.csproj", "{20DBDF72-CCA3-4B05-A225-47D71C099304}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StartApp.Ef.Declaration", "src\Tools\StartApp.Ef.Declaration\StartApp.Ef.Declaration.csproj", "{20DBDF72-CCA3-4B05-A225-47D71C099304}"
+Project("{F088123C-0E9E-452A-89E6-6BA2F21D5CAC}") = "DependencyValidation", "src\DependencyValidation\DependencyValidation.modelproj", "{AAA8EC6B-73C0-4B6D-964A-F19F6B0FBC52}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -49,10 +49,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{28F42CAD-5A8B-4FAB-8499-469013DFE1A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{28F42CAD-5A8B-4FAB-8499-469013DFE1A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{28F42CAD-5A8B-4FAB-8499-469013DFE1A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{28F42CAD-5A8B-4FAB-8499-469013DFE1A1}.Release|Any CPU.Build.0 = Release|Any CPU
 		{A7EA6047-7EFD-4998-B152-63E1BF8B1F55}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{A7EA6047-7EFD-4998-B152-63E1BF8B1F55}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A7EA6047-7EFD-4998-B152-63E1BF8B1F55}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -105,6 +101,10 @@ Global
 		{20DBDF72-CCA3-4B05-A225-47D71C099304}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{20DBDF72-CCA3-4B05-A225-47D71C099304}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{20DBDF72-CCA3-4B05-A225-47D71C099304}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AAA8EC6B-73C0-4B6D-964A-F19F6B0FBC52}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AAA8EC6B-73C0-4B6D-964A-F19F6B0FBC52}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AAA8EC6B-73C0-4B6D-964A-F19F6B0FBC52}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AAA8EC6B-73C0-4B6D-964A-F19F6B0FBC52}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
