@@ -4,17 +4,22 @@
     <TargetFramework>net5.0</TargetFramework>
     <LangVersion>default</LangVersion>
     <Nullable>enable</Nullable>
+    <AnalysisMode>AllEnabledByDefault</AnalysisMode>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.DependencyValidation.Analyzers" Version="0.11.0" />
 
-    <AdditionalFiles Include="..\..\..\DependencyValidation\DependencyValidation.layerdiagram">
-      <Link>DependencyValidation.layerdiagram</Link>
+    <AdditionalFiles Include="..\..\..\..\Layers\Layers.layerdiagram">
+      <Link>Layers.layerdiagram</Link>
       <Visible>False</Visible>
     </AdditionalFiles>
-    <None Include="..\..\..\DependencyValidation\DependencyValidation.layerdiagram.layout" Link="DependencyValidation.layerdiagram.layout" />
-    <None Include="..\..\..\DependencyValidation\DependencyValidation.layerdiagram.suppressions" Link="DependencyValidation.layerdiagram.suppressions" />
+
+    <None Include="..\..\..\..\Layers\Layers.layerdiagram.layout" Link="Layers.layerdiagram.layout" />
+    <None Include="..\..\..\..\Layers\Layers.layerdiagram.suppressions" Link="Layers.layerdiagram.suppressions" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.DependencyValidation.Analyzers" Version="0.11.0" />
   </ItemGroup>
 
   <ItemGroup>

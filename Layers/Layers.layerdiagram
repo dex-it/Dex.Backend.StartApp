@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<layerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="40e4d07a-0f39-4512-aec5-ee0849563b4f" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/LayerDesigner">
+<layerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="30bcb94e-646c-4d90-a60e-f1f3218fa97f" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/LayerDesigner">
   <layers>
-    <layer Id="edd71b35-ae89-4ab2-a485-6ba424b9d089" name="Domain">
+    <layer Id="5d9a908a-92cc-4337-9f5b-a606233fa8f8" name="Domain">
       <references>
-        <reference Id="6505934e-640b-4fcf-8159-21265cebd6e0" name="Domain">
-          <ArtifactNode Label="Domain" Category="CodeSchema_Project" Id="(Assembly=../../Domain)">
+        <reference Id="5e589bc0-cd20-43d0-8d75-ec373c2a68f3" name="Domain">
+          <ArtifactNode Label="Domain" Category="CodeSchema_Project" Id="(Assembly=../Domain)">
             <Category Ref="CodeMap_SolutionFolder" />
           </ArtifactNode>
           <ExpandedNode Id="(Assembly=StartApp.Domain)" Label="StartApp.Domain.dll" Category="CodeSchema_Assembly">
@@ -14,18 +14,18 @@
         </reference>
       </references>
     </layer>
-    <layer Id="c14d3ae2-0fd4-49b5-9f5b-e3c44f1d8e9c" name="Infrastructure">
+    <layer Id="71f40a15-2314-482e-8ea0-696dc8c35fc8" name="Infrastructure">
       <dependencyToLayers>
-        <dependencyFromLayerToLayer Id="a1148927-f1fa-451c-9dc6-803e9deafc64" direction="Forward">
-          <layerMoniker Id="edd71b35-ae89-4ab2-a485-6ba424b9d089" />
+        <dependencyFromLayerToLayer Id="19835e69-60da-4e94-b98f-4dbccb0673de" direction="Forward">
+          <layerMoniker Id="5d9a908a-92cc-4337-9f5b-a606233fa8f8" />
         </dependencyFromLayerToLayer>
-        <dependencyFromLayerToLayer Id="5d9e4d59-3dd0-4f26-9a60-ef30710709ac" direction="Forward">
-          <layerMoniker Id="c39f0080-ffb5-4332-9d8d-a44294c310a1" />
+        <dependencyFromLayerToLayer Id="925b8df9-42d5-4d63-9a17-1110ef13cb88" direction="Forward">
+          <layerMoniker Id="d0f1a4e3-7063-4a80-9bdc-a11029e5ff8f" />
         </dependencyFromLayerToLayer>
       </dependencyToLayers>
       <references>
-        <reference Id="b48c5153-2f13-4f8c-89ef-05048d7c2d05" name="Infrastructure">
-          <ArtifactNode Label="Infrastructure" Category="CodeSchema_Project" Id="(Assembly=../../Infrastructure)">
+        <reference Id="01e20d02-d345-4d3c-acf5-38468728f4ee" name="Infrastructure">
+          <ArtifactNode Label="Infrastructure" Category="CodeSchema_Project" Id="(Assembly=../Infrastructure)">
             <Category Ref="CodeMap_SolutionFolder" />
           </ArtifactNode>
           <ExpandedNode Id="(Assembly=StartApp.Web)" Label="StartApp.Web.dll" Category="CodeSchema_Assembly">
@@ -51,15 +51,15 @@
         </reference>
       </references>
     </layer>
-    <layer Id="c39f0080-ffb5-4332-9d8d-a44294c310a1" name="Application">
+    <layer Id="d0f1a4e3-7063-4a80-9bdc-a11029e5ff8f" name="Application">
       <dependencyToLayers>
-        <dependencyFromLayerToLayer Id="b4712142-e5d1-4b7d-928d-4edd1b780b45" direction="Forward">
-          <layerMoniker Id="edd71b35-ae89-4ab2-a485-6ba424b9d089" />
+        <dependencyFromLayerToLayer Id="5f842c2c-4f0a-49d2-b733-0d0633cce6fa" direction="Forward">
+          <layerMoniker Id="5d9a908a-92cc-4337-9f5b-a606233fa8f8" />
         </dependencyFromLayerToLayer>
       </dependencyToLayers>
       <references>
-        <reference Id="a94b688d-0183-41ec-ab53-01dfa0eb3a3c" name="Application">
-          <ArtifactNode Label="Application" Category="CodeSchema_Project" Id="(Assembly=../../Application)">
+        <reference Id="e65d646d-635a-42dd-a552-ea83b58e835d" name="Application">
+          <ArtifactNode Label="Application" Category="CodeSchema_Project" Id="(Assembly=../Application)">
             <Category Ref="CodeMap_SolutionFolder" />
           </ArtifactNode>
           <ExpandedNode Id="(Assembly=StartApp.Application)" Label="StartApp.Application.dll" Category="CodeSchema_Assembly">
@@ -69,23 +69,23 @@
         </reference>
       </references>
     </layer>
-    <layer Id="60a06acb-5c37-4b36-8b2e-48433d2c9c0c" name="Tests &amp; Tools">
+    <layer Id="66ce2e7d-a547-4089-9d60-a3918023e55a" name="Tests &amp; Tools">
       <dependencyToLayers>
-        <dependencyFromLayerToLayer Id="6d537b7c-249c-43dd-b74d-d422b6ea1431" direction="Forward">
-          <layerMoniker Id="c39f0080-ffb5-4332-9d8d-a44294c310a1" />
+        <dependencyFromLayerToLayer Id="bb1f5678-c07a-48cb-ac15-daff6ba80d78" direction="Forward">
+          <layerMoniker Id="71f40a15-2314-482e-8ea0-696dc8c35fc8" />
         </dependencyFromLayerToLayer>
-        <dependencyFromLayerToLayer Id="36be8ddf-86e1-47e3-bd41-fe76429f4d69" direction="Forward">
-          <layerMoniker Id="edd71b35-ae89-4ab2-a485-6ba424b9d089" />
+        <dependencyFromLayerToLayer Id="e73e436f-6dd8-46b6-9b90-272190a0d615" direction="Forward">
+          <layerMoniker Id="d0f1a4e3-7063-4a80-9bdc-a11029e5ff8f" />
         </dependencyFromLayerToLayer>
-        <dependencyFromLayerToLayer Id="ebc9a118-c156-48f5-920b-2b9577fb18d0" direction="Forward">
-          <layerMoniker Id="c14d3ae2-0fd4-49b5-9f5b-e3c44f1d8e9c" />
+        <dependencyFromLayerToLayer Id="c31b661b-1ca9-4f88-af15-17dac9f4478c" direction="Forward">
+          <layerMoniker Id="5d9a908a-92cc-4337-9f5b-a606233fa8f8" />
         </dependencyFromLayerToLayer>
       </dependencyToLayers>
       <childLayers>
-        <layer Id="611051f7-0ec4-4461-8e85-87a95a435cb7" name="Tests">
+        <layer Id="8f4d3cac-41c6-4321-a7a9-8e926f0038b4" name="Tests">
           <references>
-            <reference Id="118a5311-42ba-466e-b4bd-9c417b7fad41" name="Tests">
-              <ArtifactNode Label="Tests" Category="CodeSchema_Project" Id="(Assembly=../../Tests)">
+            <reference Id="46256ad8-8b8d-43ff-bd2d-592b1527314c" name="Tests">
+              <ArtifactNode Label="Tests" Category="CodeSchema_Project" Id="(Assembly=../Tests)">
                 <Category Ref="CodeMap_SolutionFolder" />
               </ArtifactNode>
               <ExpandedNode Id="(Assembly=Domain.Tests.L0)" Label="Domain.Tests.L0.dll" Category="CodeSchema_Assembly">
@@ -107,10 +107,10 @@
             </reference>
           </references>
         </layer>
-        <layer Id="aa2e39a0-c152-431d-acf6-b61eb192d001" name="Tools">
+        <layer Id="84001502-16f4-421b-aa9a-4ef0bd28907d" name="Tools">
           <references>
-            <reference Id="065ad174-c2a3-4fdb-a589-42ec4bb7f21b" name="Tools">
-              <ArtifactNode Label="Tools" Category="CodeSchema_Project" Id="(Assembly=../../Tools)">
+            <reference Id="55e061d1-fe59-4646-9fce-26180d13473e" name="Tools">
+              <ArtifactNode Label="Tools" Category="CodeSchema_Project" Id="(Assembly=../Tools)">
                 <Category Ref="CodeMap_SolutionFolder" />
               </ArtifactNode>
               <ExpandedNode Id="(Assembly=StartApp.Ef.Migrator)" Label="StartApp.Ef.Migrator.dll" Category="CodeSchema_Assembly">

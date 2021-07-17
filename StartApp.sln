@@ -41,7 +41,12 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StartApp.Ef.Migrator", "src
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StartApp.Ef.Declaration", "src\Tools\StartApp.Ef.Declaration\StartApp.Ef.Declaration.csproj", "{20DBDF72-CCA3-4B05-A225-47D71C099304}"
 EndProject
-Project("{F088123C-0E9E-452A-89E6-6BA2F21D5CAC}") = "DependencyValidation", "src\DependencyValidation\DependencyValidation.modelproj", "{AAA8EC6B-73C0-4B6D-964A-F19F6B0FBC52}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{12B8F3E1-A76F-4F5A-8741-74941BAB5EC3}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
+EndProject
+Project("{F088123C-0E9E-452A-89E6-6BA2F21D5CAC}") = "Layers", "Layers\Layers.modelproj", "{84C91B97-7FB9-4FDE-AC81-2DCC258671E4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -101,10 +106,10 @@ Global
 		{20DBDF72-CCA3-4B05-A225-47D71C099304}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{20DBDF72-CCA3-4B05-A225-47D71C099304}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{20DBDF72-CCA3-4B05-A225-47D71C099304}.Release|Any CPU.Build.0 = Release|Any CPU
-		{AAA8EC6B-73C0-4B6D-964A-F19F6B0FBC52}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{AAA8EC6B-73C0-4B6D-964A-F19F6B0FBC52}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{AAA8EC6B-73C0-4B6D-964A-F19F6B0FBC52}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{AAA8EC6B-73C0-4B6D-964A-F19F6B0FBC52}.Release|Any CPU.Build.0 = Release|Any CPU
+		{84C91B97-7FB9-4FDE-AC81-2DCC258671E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{84C91B97-7FB9-4FDE-AC81-2DCC258671E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{84C91B97-7FB9-4FDE-AC81-2DCC258671E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{84C91B97-7FB9-4FDE-AC81-2DCC258671E4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

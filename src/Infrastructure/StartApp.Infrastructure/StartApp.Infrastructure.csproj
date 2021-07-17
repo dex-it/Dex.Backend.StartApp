@@ -4,6 +4,7 @@
     <TargetFramework>netstandard2.1</TargetFramework>
     <LangVersion>default</LangVersion>
     <Nullable>enable</Nullable>
+    <AnalysisMode>AllEnabledByDefault</AnalysisMode>
   </PropertyGroup>
 
   <ItemGroup>
@@ -16,17 +17,16 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.DependencyValidation.Analyzers" Version="0.11.0" />
 
-    <AdditionalFiles Include="..\..\DependencyValidation\DependencyValidation.layerdiagram">
-      <Link>DependencyValidation.layerdiagram</Link>
+    <AdditionalFiles Include="..\..\..\Layers\Layers.layerdiagram">
+      <Link>Layers.layerdiagram</Link>
       <Visible>False</Visible>
     </AdditionalFiles>
   </ItemGroup>
 
-
   <ItemGroup>
     <PackageReference Include="Dex.Ef" Version="1.0.10" />
+    <PackageReference Include="Microsoft.DependencyValidation.Analyzers" Version="0.11.0" />
   </ItemGroup>
 
 </Project>

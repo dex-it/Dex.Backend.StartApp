@@ -1,3 +1,4 @@
+using System;
 using System.Runtime.CompilerServices;
 
 [assembly: InternalsVisibleTo("DependencyInjection")]
@@ -5,3 +6,4 @@ using System.Runtime.CompilerServices;
 [assembly: InternalsVisibleTo("Infrastructure.Tests.L1")]
 [assembly: InternalsVisibleTo("StartApp.Ef.Migrator")]
 [assembly: InternalsVisibleTo("StartApp.Ef.Declaration")]
+[assembly: CLSCompliant(false)]

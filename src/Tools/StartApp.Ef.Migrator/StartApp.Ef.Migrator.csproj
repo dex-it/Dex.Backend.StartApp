@@ -36,15 +36,15 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.DependencyValidation.Analyzers" Version="0.11.0" />
 
-    <AdditionalFiles Include="..\..\DependencyValidation\DependencyValidation.layerdiagram">
-      <Link>DependencyValidation.layerdiagram</Link>
+    <AdditionalFiles Include="..\..\..\Layers\Layers.layerdiagram">
+      <Link>Layers.layerdiagram</Link>
       <Visible>False</Visible>
     </AdditionalFiles>
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.DependencyValidation.Analyzers" Version="0.11.0" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.7" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="5.0.7">
       <PrivateAssets>all</PrivateAssets>
@@ -53,8 +53,8 @@
     <PackageReference Include="Microsoft.Extensions.Configuration" Version="5.0.0" />
     <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="5.0.0" />
     <PackageReference Include="Mono.Options" Version="6.6.0.161" />
-    <PackageReference Include="Npgsql" Version="5.0.5" />
-    <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="5.0.6" />
+    <PackageReference Include="Npgsql" Version="5.0.7" />
+    <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="5.0.7" />
     <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL.Design" Version="1.1.0" />
   </ItemGroup>
 
