@@ -15,5 +15,15 @@ namespace StartApp.Infrastructure.Contexts
             if (modelStore == null) throw new ArgumentNullException(nameof(modelStore));
             _modelTypes = modelStore.GetModels();
         }
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            foreach (Type modelType in _modelTypes)
+            {
+                modelBuilder.Entity(modelType);
+            }
+            
+            base.OnModelCreating(modelBuilder);
+        }
     }
 }
