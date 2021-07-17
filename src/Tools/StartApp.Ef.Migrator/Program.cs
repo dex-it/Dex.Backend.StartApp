@@ -7,18 +7,17 @@ namespace StartApp.Ef.Migrator
 {
     public static class Program
     {
-        public static string EnvironmentName = "Development";
+        public static string EnvironmentName { get; private set; } = "Development";
 
         private static void Main(string[] args)
         {
-            var dataOptions = new OptionSet
+            if (args == null)
             {
-                {"environment=", s => EnvironmentName = s}
-            };
-            var actionOptions = new OptionSet
-            {
-                {"migrate", _ => Migrate()}
-            };
+                throw new ArgumentNullException(nameof(args));
+            }
+
+            var dataOptions = new OptionSet {{"environment=", s => EnvironmentName = s}};
+            var actionOptions = new OptionSet {{"migrate", _ => Migrate()}};
 
             if (args.Any() == false)
             {
@@ -34,7 +33,7 @@ namespace StartApp.Ef.Migrator
 
         private static void Migrate()
         {
-            var context = new DbContextFactory().CreateDbContext(Array.Empty<string>());
+            using var context = new DbContextFactory().CreateDbContext(Array.Empty<string>());
             context.Database.Migrate();
         }
     }

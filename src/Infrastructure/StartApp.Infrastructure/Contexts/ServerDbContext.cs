@@ -18,6 +18,11 @@ namespace StartApp.Infrastructure.Contexts
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            if (modelBuilder == null)
+            {
+                throw new ArgumentNullException(nameof(modelBuilder));
+            }
+
             foreach (Type modelType in _modelTypes)
             {
                 modelBuilder.Entity(modelType);

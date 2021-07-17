@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using System;
 
 namespace StartApp.Ef.Migrator
 {
@@ -6,6 +7,10 @@ namespace StartApp.Ef.Migrator
     {
         public static void Config(ModelBuilder builder)
         {
+            if (builder == null)
+            {
+                throw new ArgumentNullException(nameof(builder));
+            }
         }
     }
 }
